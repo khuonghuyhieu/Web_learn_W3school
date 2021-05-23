@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
+    ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type= "text/javascript" src="myscript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- Menu -->
+    <div class="menu-top">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BAND</a></li>
+            <li><a href="#">TOUR</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+            <li>
+                <div class="drop-down">
+                    <ul>
+                        <li>
+                            <a href="#">MORE<img src="image/dropdown.jpg"></a>
+                            <ul>
+                                <li><a href="#">Merchandise</a></li>
+                                <li><a href="#">Extras</a></li>
+                                <li><a href="#">Media</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <div class="search-icon">
+                    <i class="fas fa-search"></i>
+            </div>
+        </ul>
+    </div>
+
+        <!-- Automatic SlidesShow -->
+
+    <div class="slide-show">
+
+        <div class="img-show">
+            <img src="image/chicago.jpg">
+            <div class="text-slide">
+                <h3>Chicago</h3>
+                <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+            </div>
+        </div>
+
+        <div class="img-show">
+            <img src="image/la.jpg">
+            <div class="text-slide">
+                <h3>Los Angeles</h3>
+                <p><b>We had the best time playing at Venice Beach!</b></p>
+            </div>
+        </div>
+
+        <div class="img-show">
+            <img src="image/ny.jpg">
+            <div class="text-slide">
+                <h3>New York</h3>
+                <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+            </div>
+        </div>
+    </div>
+
+            <!-- Then Band -->
+
+    <div class="the-band-contain">
+        <h2>THE BAND</h2>
+        <p class="text-band-titel"><i>We love music</i></p>
+        <p class="text-band-contain">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <div class="the-band-img">
+            <div class="band-name">
+                <p>Name</p>
+                <img src="image/bandmember.jpg">
+            </div>
+            <div class="band-name">
+                <p>Name</p>
+                <img src="image/bandmember.jpg">
+            </div>
+            <div class="band-name">
+                <p>Name</p>
+                <img src="image/bandmember.jpg">
+            </div>
+        </div>
+        
+    </div>
+
+            <!-- Tour Dates -->
+
+    <div class="tour-dates">
+        <div class="tour-contain">
+            <h2>TOUR DATES</h2>
+            <p class="tour-text-hattag"><i>Remember to book your tickets</i></p>
+            <br>
+            <ul class="text-boder">
+                <li class="tour-li">September
+                    <span class="tour-span-red">Sold out</span>
+                </li>
+                <li class="tour-li">October
+                    <span class="tour-span-red">Sold out</span>
+                </li>
+                <li class="tour-li">November
+                    <span class="tour-span">3</span>
+                </li>
+            </ul>
+            <div class="tour-city">
+                <div class="tour-img-button">
+                    <img class="tour-img-hover" src="image/newyork.jpg">
+                    <div class="text-button">
+                        <p><b>New York</b></p>
+                        <p class="text-date-city">Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button id="tour-button" onclick="showTickets()">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="tour-img-button">
+                    <img class="tour-img-hover" src="image/paris.jpg">
+                    <div class="text-button">
+                        <p><b>Paris</b></p>
+                        <p class="text-date-city">Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button id="tour-button" onclick="showTickets()">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="tour-img-button">
+                    <img class="tour-img-hover" src="image/sanfran.jpg">
+                    <div class="text-button">
+                        <p><b>San Francisco</b></p>
+                        <p class="text-date-city">Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button id="tour-button" onclick="showTickets()">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-contain">
+        <h2>CONTACT</h2>
+        <p class="hatag-contact"><i>Fan?Drop a note!</i></p>
+        <div class="hero-contact">
+            <div class="contact-left">
+                <i class="fa fa-map-marker"></i>
+                Chicago, US
+                <br>
+                <i class="fa fa-phone"></i>
+                Phone:  +00 151515
+                <br>
+                <i class="fa fa-envelope"></i>
+                Email: mail@mail.com
+                <br>
+            </div>
+
+            <div class="contact-right">
+                <form action="">
+                    <div class="input-name">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-email">
+                        <input type="text" placeholder="Email"> 
+                    </div>
+                    <div class="input-message">
+                        <input type="text" placeholder="Message">
+                    </div>
+                    <button>SEND</button>
+                </form>
+            </div>
+               
+        </div>
+    </div>
+
+    <img class="maps" src="image/map.jpg" alt="">
+
+    <footer class="footer">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-pinterest"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Powered by
+           <a href="#">w3.css</a> 
+        </p>
+    </footer>
+
+    <div id="show-ticket">
+        <div class="ticket-detail">
+            <div class="titel-ticket">
+                <span class="x-close" onclick="closeTickets()">X</span>
+                <h2 class="text-titel">
+                    <i class="fa fa-suitcase"></i>
+                    Tickets
+                </h2>
+            </div>
+            <div class="text-input">
+                <p>
+                    <label>
+                        <i class="fa fa-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                </p>
+                <input type="text" placeholder="How many?">
+                <p>
+                    <label>
+                        <i class="fa fa-user"></i>
+                        Send To
+                    </label>
+                </p>
+                <input type="text" placeholder="Enter email">
+                <button class="button-pay">PAY
+                    <i class="fa fa-check"></i>
+                </button>
+                <button class="button-close" onclick="closeTickets()">Close
+                    <i class="fa-remove"></i>
+                </button>
+                <p class="text-need">Need
+                    <a class="text-help" href="#">help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
